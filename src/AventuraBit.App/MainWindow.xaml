@@ -1,0 +1,17 @@
+﻿<Window x:Class="AventuraBit.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="La Aventura de Bit" Width="1440" Height="880" MinWidth="1150" MinHeight="720"
+        WindowStartupLocation="CenterScreen" UseLayoutRounding="True">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#7DD3FC" Offset="0" />
+                <GradientStop Color="#BAE6FD" Offset="0.55" />
+                <GradientStop Color="#E0F2FE" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Canvas x:Name="Nubes" IsHitTestVisible="False" ClipToBounds="True" />
+        <ContentControl x:Name="Contenido" Focusable="False" />
+    </Grid>
+</Window>
